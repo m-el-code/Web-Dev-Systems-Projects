@@ -1,0 +1,190 @@
+
+@font-face {
+    font-family: ChakraPetch-Regular;
+    src: url(ChakraPetch-Regular.ttf);
+}
+body {
+    background-image: url(night_sky.gif);
+}
+nav {
+    background-color: rgb(212, 194, 197, 0.5);
+    border-color: rgb(226, 213, 213);
+    border-style: solid;
+    margin: 0px 20px 0px 10px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ChakraPetch-Regular;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(226, 213, 213);
+    font-size: larger;
+}
+
+section.main {
+    display:flex;
+    margin:0px;
+    align-items: stretch;
+}
+section.imageContainer {
+    background-color: rgb(212, 194, 197, 0.5);
+    border-color: rgb(226, 213, 213);
+    border-style: solid;
+    margin: 10px 20px 0px 10px;
+    border-radius: 15px;
+    float: left;
+    font-family: ChakraPetch-Regular;
+
+}
+
+img.pfp {
+    width: 365px;
+    height: 411px;
+    border-radius: 15px;;
+}
+
+section.intro {
+    margin: 10px 20px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h1.intro {
+    background-color: rgb(212, 194, 197, 0.5);
+    border-color: rgb(226, 213, 213);
+    border-style: solid;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: ChakraPetch-Regular;
+    font-size: 40px;
+}
+article {
+    background-color: rgb(212, 194, 197, 0.5);
+    border-color: rgb(226, 213, 213);
+    border-style: solid;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-grow: 1;
+    font-size: 20px;
+    font-family: ChakraPetch-Regular;
+
+}
+
+section.other {
+    display: flex;
+    margin: 10px 20px 0px 10px;
+    align-items: stretch;
+    font-family: ChakraPetch-Regular;
+}
+
+section.skills {
+    background-color: rgb(212, 194, 197, 0.5);
+    border-radius: 15px;
+    border-color: rgb(226, 213, 213);
+    border-style: solid;
+    margin: 0px;
+    padding: 10px;
+}
+
+h1.skills {
+    cursor: pointer;
+}
+section.skillsList {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+li {
+    display: block;
+    background-color: rgb(226, 213, 213, 0.7);
+    border-radius: 5px;
+    padding: 2px;
+    width: 376px;
+    margin: 3px;
+}
+
+h1.skills:hover + section.skillsList {
+    visibility: visible;
+    opacity:1;
+}
+
+
+section.fluffy {
+    background-color: rgb(212, 194, 197, 0.5);
+    border-color: rgb(226, 213, 213);
+    border-style: solid;
+    margin: 0px 0px 0px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-grow: 1;
+    font-size: 20px;
+    font-family: ChakraPetch-Regular;
+    flex-wrap: wrap;
+    
+}
+
+img.cat{
+    width: 200px;
+    height: 225px;
+    padding: 10px;
+    border-radius: 15px;
+    animation: image-slide 2s ease 0s 1 normal forwards;
+}
+
+h1.cat {
+    font-size: 35px;
+    width: 200px;
+    padding: 10px;
+    margin: 0px;
+    animation: image-slide 2s ease 0s 1 normal forwards;
+}
+
+@keyframes image-slide {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+footer {
+    background-color: rgb(212, 194, 197, 0.5);
+    border-color: rgb(226, 213, 213);
+    border-style: solid;
+    margin: 10px 20px 0px 10px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: ChakraPetch-Regular;
+    
+}
+
+footer p::before {
+    color: rgb(226, 213, 213);
+    content: "✮";
+}
+
+footer p::after {
+    color: rgb(226, 213, 213);
+    content: "✮";
+}
